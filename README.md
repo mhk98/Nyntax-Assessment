@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+## Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Follow these steps to run and test the project:
 
-## Available Scripts
+### Prerequisites
 
-In the project directory, you can run:
+- Node.js: Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository to your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/mhk98/Nyntax-Assessment.git
 
-### `npm test`
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Open command prompt and type cd Nyntax-Assessmen
+3. npm install (Install project dependencies)
+4. npm start (Run the Nyntax-Assessmen project)
+5. The server will be running at http://localhost:3000
 
-### `npm run build`
+# Car Rental System
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Overview
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This backend system calculates the total rental charges based on the rental duration, car rates, discounts, and additional charges. The system ensures the customer always gets the best rate by comparing hourly, daily, and weekly rates.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- Calculates total rental charges based on duration and car rates.
+- Compares hourly, daily, and weekly rates to ensure the customer pays the lowest possible amount.
+- Applies discounts and additional charges.
+- Handles edge cases such as renting a car for a duration that falls between different rate categories.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Example Scenario
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Tesla Rental Rates
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Hourly rate: $10/hour
+- Daily rate: $50/day
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Calculation for a 6-Hour Rental
 
-## Learn More
+1. **Input**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - Rental duration: 6 hours
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Cost Calculation**:
 
-### Code Splitting
+   - Hourly cost: 6 \* $10 = $60
+   - Daily cost: $50
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Best Rate**:
 
-### Analyzing the Bundle Size
+   - The daily rate of $50 is cheaper than the hourly cost of $60.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Final Charge**:
+   - The customer is charged $50 for 6 hours, ensuring they pay the lowest possible rate.
 
-### Making a Progressive Web App
+## Handling Rate Comparisons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To ensure customers are not overcharged, the system compares the total cost for the rental duration against the daily and weekly rates. For example, if renting a Tesla for 6 hours, the system charges the daily rate of $50 instead of $60 for hourly.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Conclusion
 
-### Deployment
+This system ensures fair pricing for car rentals by comparing different rate categories and always selecting the best option for the customer. Discounts and additional charges are also seamlessly integrated into the final calculation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Invoice Issue
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I found your invoice to be disorganized. Therefore, I have created this invoice myself.

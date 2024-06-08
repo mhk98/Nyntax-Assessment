@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import ReservationForm from "./components/ReservationForm";
+import { Provider } from "react-redux";
+import store from "./app/store";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mx-12">
+      <div>
+        <Provider store={store}>
+          <ReservationForm />
+        </Provider>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
